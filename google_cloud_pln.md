@@ -656,4 +656,10 @@ Ambos os sistemas erraram exatamente o mesmo comentário (03): "O Subway estava 
 
 ---
 
+## Conclusão
+
+O Google Cloud oferece um ecossistema de PLN abrangente, cobrindo desde análise estruturada de texto até síntese de fala, tradução automática e modelos de linguagem de grande porte. Para o contexto do projeto ZAMP, os serviços mais relevantes são a Cloud Natural Language API e o Vertex AI: o primeiro fornece análise de sentimento, reconhecimento de entidades e classificação de conteúdo via chamadas REST simples, enquanto o segundo abre espaço para tarefas mais abertas como geração de relatórios e categorização zero-shot sem treinamento prévio. A comparação direta entre a Cloud Natural Language API e o modelo de Regressão Logística treinado pelo grupo mostrou desempenho equivalente nos comentários de teste, ambos com 90% de acurácia. Isso indica que a API do Google é uma alternativa viável para projetos com pouco ou nenhum dado rotulado, mas o modelo próprio se mostrou mais adequado ao contexto ZAMP por três razões concretas: custo operacional significativamente menor para o volume de 50 mil comentários mensais, controle total sobre o esquema de classes e a calibração da classe neutra, e conformidade com a LGPD ao manter os dados dentro da infraestrutura do parceiro. De forma geral, a escolha entre usar um serviço de nuvem pronto ou treinar um modelo especializado depende menos de qual é "melhor" no sentido absoluto e mais de volume de dados disponíveis, custo, privacidade e nível de especialização no domínio exigido pelo problema.
+
+---
+
 *Levantamento realizado com base na documentação oficial do Google Cloud (junho/2025). Todos os exemplos utilizam requisições HTTP diretas, sem bibliotecas específicas do fabricante, conforme orientação da atividade. Seção de comparação produzida com dados reais do projeto, Grupo 4, Inteli, Módulo 6 (2026).*
